@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<title>James's Comic Book - #1</title>
+	<meta name="viewport" content="width=1024">
+	<script type="text/javascript" src="assets/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="assets/turn.min.js"></script>
+<style>
+	body {
+		background: #aaa;
+	}
+	.page {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-color: #aaa;
+	}
+	#container {
+		width: 1024px;
+		margin: 0 auto;
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+			<div class="flipbook">
+	<div class="page hard" style="background-image:url(assets/0.jpg);"></div>
+	<div class="page" style="background-image:url(assets/1.jpg);"></div>
+	<div class="page" style="background-image:url(assets/2.jpg);"></div>
+	<div class="page" style="background-image:url(assets/3.jpg);"></div>
+	<div class="page" style="background-image:url(assets/4.jpg);"></div>
+	<div class="page" style="background-image:url(assets/5.jpg);"></div>
+	<div class="page" style="background-image:url(assets/6.jpg);"></div>
+	<div class="page" style="background-image:url(assets/7.jpg);"></div>
+	<div class="page" style="background-image:url(assets/8.jpg);"></div>
+	<div class="page" style="background-image:url(assets/9.jpg);"></div>
+	<div class="page" style="background-image:url(assets/10.jpg);"></div>
+	<div class="page" style="background-image:url(assets/11.jpg);"></div>
+	<div class="page" style="background-image:url(assets/12.jpg);"></div>
+	<div class="page" style="background-image:url(assets/13.jpg);"></div>
+	<div class="page" style="background-image:url(assets/14.jpg);"></div>
+	<div class="page" style="background-image:url(assets/15.jpg);"></div>
+	<div class="page" style="background-image:url(assets/16.jpg);"></div>
+	<div class="page hard" style="background-image:url(assets/17.jpg);"></div>
+</div>
+</div>
+
+<script type="text/javascript">
+	$(window).ready(function() {
+		$('.flipbook').turn({
+			width:1024,
+			height:663,
+			elevation: 50,
+			gradients: true,
+			autoCenter: false,
+			display: 'double'
+		});
+	});
+</script>
+
+</body>
+</html>
